@@ -1,0 +1,10 @@
+#nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-family: serif;
+}
