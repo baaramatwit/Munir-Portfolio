@@ -2,10 +2,32 @@
     --neutral: #232946;
     --base-100: #fffffe;
     --neutral-focus: #121629;
+    --primary: #eebbc3;
+    --accent: #d4d8f0;
+    --secondary: #b8c1ec;
 }
 
 * {
     margin: 0;
+}
+
+body {
+    font-family: "Noto Serif", sans-serif;
+    text-align: center;
+    background-color: var(--neutral);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
 }
 
 #nav-bar {
@@ -23,7 +45,7 @@
 .nav-links {
     display: flex;
     list-style: none;
-    font-family: serif;
+
 }
 
 .nav-links a {
@@ -34,4 +56,68 @@
 
 .nav-links a:hover {
     text-decoration: underline;
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#welcome-section {
+    background-color: var(--neutral);
+    color: var(--base-100);
+    display: flex;
+    flex-direction: column;
+
+}
+
+#welcome-section h1 {
+    margin-top: 30vh;
+}
+
+#welcome-section p {
+    color: var(--primary);
+    font-size: 25px;
+    margin: 25px 0;
+    font-style: italic;
+}
+
+#projects {
+    background-color: var(--secondary);
+    color: var(--neutral)
+}
+
+#projects h1 {
+    border-bottom: 5px solid var(--neutral);
+    width: fit-content;
+    margin: auto;
+}
+
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#projects .project-tile {
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral);
+    color: var(--accent);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
+}
+
+#projects .project-tile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
