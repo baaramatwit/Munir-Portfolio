@@ -127,3 +127,37 @@ section {
     font-size: 25px;
     padding: 10px;
 }
+
+#projects .project-tile span {
+    opacity: 0%;
+    padding: 0 5px;
+}
+
+#projects .project-tile:hover span {
+    opacity: 100%;
+    color: var(--primary);
+    transition: opacity 0.25s ease-in;
+}
+
+.show-all {
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+    background-color: var(--neutral);
+    color: var(--accent);
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+
+
+}
+
+.show-all:hover {
+    background-color: var(--neutral-focus);
+    color: var(--base-100);
+}
