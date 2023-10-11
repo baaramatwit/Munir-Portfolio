@@ -27,6 +27,76 @@
             </div>
         </div>
     </div>
+
+    <!-- ----------------ABOUT----------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Munir-Suits-Black.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Machine Learning Engineer with expertise in Python and AWS.
+                        A 2023 graduate from Wentworth Institute of Technology, my journey includes Java, AI, and
+                        computer science courses such as Data Structures , Algorithms, Blockchain, and Encryption.
+                        In my professional career, I've developed content generators and chatbots, streamlined diagnoses
+                        with neural networks, and worked with leading tech companies.
+                        Beyond tech, I enjoy reading strategy and business books, powerlifting, and coordinating youth
+                        events.
+                        Let's connect and explore the possibilities of technology together!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Designing Nueral Networks</li>
+                            <li><span>Python</span><br>Developing innovative machine learning solutions for real-world
+                                healthcare challenges.</li>
+                            <li><span>Java</span><br>Crafting 0xland project, from the foundational blockchain structure
+                                to intricate functions that power its operations.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2023 - September 2023</span><br>Machine Learning Engineer at Matt Young Media
+                            </li>
+                            <li><span>September 2022 - October 2023</span><br>Machine Learning Engineer at Umass Medical
+                                School</li>
+                            <li><span>August 2021 - August 2022</span><br>Software Test Engineer at Snap Inc.</li>
+                            <li><span>May 2021 - August 2021</span><br>Software Engineer at Dolume LLC</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>September 2019 - August 2023</span><br>Bachelors Degree in Computer Science at
+                                Wentworth Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+        }
+    </script>
 </body>
 
 </html>
