@@ -7,7 +7,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -414,4 +414,10 @@ nav .fa-solid {
         font-size: 14px;
     }
 
+}
+
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
