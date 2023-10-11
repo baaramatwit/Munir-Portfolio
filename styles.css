@@ -14,7 +14,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/munir.png);
+    background-image: url(images/munir-resized-main.png);
     background-size: cover;
     background-position: center;
 
@@ -327,4 +327,12 @@ form .btn2 {
 
 .copyright i {
     color: #ff004f;
+}
+
+/* ------------------- css for small screens -----------*/
+
+@media only screen and (max-with: 600px) {
+    #header {
+        background-image: url(images/munir_phone.png);
+    }
 }
