@@ -14,12 +14,14 @@
         <div class="container">
             <nav>
                 <img src="images/Munir (3)-PhotoRoom.png-PhotoRoom.png" class="logo">
-                <ul>
-                    <li><a href="#header-text">Home</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#container">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Machine Learning Engineer</p>
@@ -130,7 +132,7 @@
 
     <!-- ------------------contact------------------>
 
-    <div id="container">
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -178,6 +180,16 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
 
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
     </script>
 </body>
